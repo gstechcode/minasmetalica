@@ -1,0 +1,40 @@
+<div class="row px-5 py-3">
+    <div class="col">
+        <h1 class="gold home-services">NOSSOS PRODUTOS E SERVIÇOS</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col text-white home-servicesdesc">A Minas Metálica trabalha com a fabricação e instalação de estruturas para galpões, fachadas para loja, coberturas entre outros.</div>
+</div>
+
+<div class="row pt-5 px-3 px-lg-0" id="homeservicosphotos">
+  
+  <?php
+        $options= array(
+          "",
+          "MEZANINO",
+          "COBERTURAS",
+          "GALPÕES",
+          "FACHADAS",
+          "TELHADOS TERMOACÚSTICO",
+          "REFORÇO ESTRUTURAL",
+          "ESTRUTURA PARA ELEVADOR E ESCADAS",
+          "PROJETOS PERSONALIZADOS"
+        );
+        $diretorio = scandir(__DIR__ . "/../../../Images/services");
+        $qtd = count($diretorio) - 2;
+        for($i = 1; $i < $qtd + 1; $i++){
+    ?>
+      <div class="col-lg-3 col-6 coltext-align-center px-1">
+            <div class="card" style="background: transparent; border: 0">
+                <img src="/images/services/<?= $i ?>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text gold card-text-services"><?= $options[$i] ?></p>
+                </div>
+              </div>
+        
+      </div>   
+  <?php } ?>
+</div>
+
+</div>

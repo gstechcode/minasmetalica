@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-12 text-center py-3">
+    <h1 class="gold text-clientes">CLIENTES</h1>
+  </div>
+<div>
+<div class="row justify-content-center" id="clientes" style="padding: 30px 100px">
+    <div class="col-12 mt-3">
+      <h1 class="gold mb-5 text-lg-left text-center">Industrial</h1>
+    </div>
+    <?php
+        $diretorio = scandir(__DIR__ . "/../../../Images/clientes/industrial");
+        $qtd = count($diretorio) - 2;
+        for($i = 1; $i < $qtd + 1; $i++){
+    ?>
+    <div class="col-lg-2 col-6 mt-2 mx-0 px-1">
+        <img src="/images/clientes/industrial/<?= $i ?>" class="img-fluid"> 
+    </div>
+    <?php } ?>
+
+    <div class="col-12 mt-5 text-center">
+      <h1 class="gold mb-5">Comercial</h1>
+    </div>
+    <?php
+        $diretorio = scandir(__DIR__ . "/../../../Images/clientes/comercial");
+        $qtd = count($diretorio) - 2;
+        for($i = 1; $i < $qtd + 1; $i++){
+    ?>
+    <div class="col-lg-2 col-6 mt-2 mx-0 px-1">
+        <img src="/images/clientes/comercial/<?= $i ?>" class="img-fluid"> 
+    </div>
+    <?php } ?>
+
+    <div class="col-12 mt-5 text-center">
+      <h1 class="gold mb-5">Residencial</h1>
+    </div>
+    <?php
+        $diretorio = scandir(__DIR__ . "/../../../Images/clientes/residencial");
+        $qtd = count($diretorio) - 2;
+        for($i = 1; $i < $qtd + 1; $i++){
+    ?>
+    <div class="col-lg-2 col-6 mt-2 mx-0 px-1">
+        <img src="/images/clientes/residencial/<?= $i ?>" class="img-fluid"> 
+    </div>
+    <?php } ?>
+</div>

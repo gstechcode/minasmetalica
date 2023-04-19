@@ -1,0 +1,218 @@
+<style>
+    *{
+        font-family: "Montserrat", Sans-serif;
+    }
+    @keyframes linksT{
+        from{
+            width: 0%;
+            height: 100%
+        }
+        to{
+            width: 100%;
+            height: 100%
+        }
+    }
+    body{
+        background: #101010
+    }
+
+    .navbar-brand > img{
+        width: 150px;
+        padding: 10px;
+    }
+    .navbar{
+        border-bottom: 0.5px solid #FECD29;
+        background: #000000;
+        font-family: "Montserrat", Sans-serif;
+    }
+    .navbar-nav{
+        margin-left: auto;
+    }
+    .nav-link{
+        padding: 10px;
+        position: relative;
+        font-size: 1.3rem;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .nav-link:hover{
+        color: black !important;
+        transition: 2s;
+    }
+
+    .nav-link:hover::before{
+        animation: linksT 1s;
+        animation-fill-mode: forwards;
+        content: "";
+        border-radius: 3px;
+        background: gold;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .active{
+        color: #FECD29 !important;
+    }
+    .carousel-item{
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .carousel-item > img{
+        filter: saturate(70%) opacity(10%);
+    }
+
+    .carousel-item-clientes > img{
+        filter: saturate(100%) opacity(100%);
+    }
+
+    .gold{
+        color: #FECD29
+    }
+    .text-clientes{
+        font-family: "Montserrat", Sans-serif;
+    }
+    
+
+    #clientes{
+        opacity: 0;
+        transition: all 8s;
+    }
+
+    .welcome-title{
+        margin-bottom: 30px;
+        color: #FECD29;
+        font-size: 2rem;
+    }
+
+    .welcome-text{
+        color: white;
+        margin-bottom: 30px;
+    }
+    .home-services{
+        text-align: center;
+    }
+    .home-servicesdesc{
+        text-align: center;
+    }
+    .card{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #homeservicosphotos{
+        opacity: 0;
+        transition: 3s all;
+    }
+
+    #apresentacao{
+        opacity: 0;
+        transition: 2s all;
+    }
+    .card-text-services{
+        font-family: "Montserrat", Sans-serif;
+        font-size: 1.5rem;
+    }
+    .missao-container{
+        background-image: url("/images/IMG1");
+    }
+    .missao-title{
+        color:#FECD29;
+        margin-bottom: 30px;
+    }
+    .missao-text{
+        color: white;
+    }
+    .missao, .titles{
+        font-family: "Montserrat", Sans-serif;
+        text-align: center;
+    }
+    footer{
+        border-top: 1px solid #FECD29;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .photosresidenciais, .photosindustrial, .photoscomercial{
+        width: 0%;
+        transition: 3s all;
+        max-width: 100%;
+        max-height: 300px;
+        height: 300px;
+    }
+
+
+    #residencial, #industrial, #comercial, #contato, #galeria, #home{
+        opacity: 0;
+        transition: 3s all;
+    }
+
+    .icons{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 1rem;
+    }
+
+    .icons-rodape{
+        width: 40px;
+        height: 20px;
+    }
+
+
+    .imgs-service{
+        width: 0;
+        height: 0;
+        transition: 3s all;
+    }
+
+    #servicos{
+        opacity: 0;
+        transition: 3s all;
+    }
+
+    #bodyApresentacao{
+        background: gold;
+        transition: 3s all;
+    }
+
+    .bodyhome{
+        font-size: 16px;
+    }
+
+    #logoapresentacao{
+        opacity: 0;
+        transition: 5s all;
+    }
+    
+    .card-img-top{
+        height: 121px;
+    }
+    
+    .imgs-service > .row > div > img{
+        height: 145px;
+        width: 290px;
+    }
+
+    .img-card-gallery{
+        height: 200px;
+    }
+
+    @media screen and (max-width: 500px){
+        .car-home-descript{
+            font-size: 0.5em;
+        }
+        .car-home-title{
+            font-size: 0.8em;
+        }
+        .card-text-services{
+            font-family: "Montserrat", Sans-serif;
+            font-size: 0.8em;
+        }
+    }
+       
+</style>

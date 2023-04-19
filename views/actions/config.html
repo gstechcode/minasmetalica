@@ -1,0 +1,98 @@
+<script type="text/javascript">
+    function mostraescondido(){
+       setTimeout(() => {
+            let x= document.getElementById("homeservicosphotos")
+            let y= document.getElementById("clientes")
+            x.style.opacity= 1
+            y.style.opacity= 1
+       }, 800);
+
+    }
+
+    function showContato(){
+        let x= document.getElementById("contato")
+        x.style.opacity= 1
+    }
+
+    function showHome(){
+        let x= document.getElementById("home")
+        x.style.opacity= 1
+    }
+
+    function showGaleria(){
+        let x= document.getElementById("galeria")
+        x.style.opacity= 1
+    }
+
+    function apresentar(){
+        let body= document.getElementById("bodyApresentacao")
+        let logo= document.getElementById("logoapresentacao")
+        
+        body.style.background= "black"
+        
+        setTimeout(() => {
+            logo.style.opacity= 1
+       }, 2000);
+        setTimeout(() => {
+            window.location = "/home";
+       }, 6000);
+    }
+
+    function showServicos(){
+        let x= document.getElementById("servicos")
+        let y= document.getElementsByClassName("imgs-service")
+        x.style.opacity= 1
+        for (const key in y) {
+            if(parseInt(key) == NaN){
+                return 0;
+            }else{
+                y[key].style.width= "100%"
+                y[key].style.height= "100%"
+            }
+        }
+    }
+
+    function showInstitucional(){
+        let x= document.getElementById("apresentacao")
+        x.style.opacity= 1
+    }
+
+    function showResidencial(){
+        let x= document.getElementById("residencial")
+        let y= document.getElementsByClassName("photosresidenciais")
+        x.style.opacity= 1
+        for (const key in y) {
+            if(parseInt(key) == NaN){
+                return 0;
+            }else{
+                y[key].style.width= "100%"
+            }
+        }
+    }
+
+    function showIndustrial(){
+        let x= document.getElementById("industrial")
+        let y= document.getElementsByClassName("photosindustrial")
+        x.style.opacity= 1
+        for (const key in y) {
+            if(parseInt(key) == NaN){
+                return 0;
+            }else{
+                y[key].style.width= "100%"
+            }
+        }
+    }
+
+    function showComercial(){
+        let x= document.getElementById("comercial")
+        let y= document.getElementsByClassName("photoscomercial")
+        x.style.opacity= 1
+        for (const key in y) {
+            if(parseInt(key) == NaN){
+                return 0;
+            }else{
+                y[key].style.width= "100%"
+            }
+        }
+    }
+</script>

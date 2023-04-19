@@ -1,0 +1,17 @@
+<div id="industrial">
+<div class="row p-5">
+    <h1 class="gold">Industrial</h1>
+</div>
+
+<div class="row p-lg-5 px-5 py-1">
+    <?php
+        $diretorio = scandir(__DIR__ . "/../../../../../Images/industrial");
+        $qtd = count($diretorio) - 2;
+        for($i = 1; $i < $qtd + 1; $i++){
+    ?>
+    <div class="col-lg-3 col-12 mt-2 mx-0 px-1">
+        <img src="/images/industrial/I<?= $i ?>" class="img-fluid photosindustrial"> 
+    </div>
+    <?php } ?>
+</div>
+</div>
