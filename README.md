@@ -23,6 +23,6 @@
 <p>Neste site foi possível treinar os conceitos básicos de REQUESTS e RESPONSES em PHP sem o uso de um Framework, usando somente o Front
 com o Framework Bootstrap CSS</p>
 
-<a href="www.minasmetalica.com.br" style="background: gold; color: white; border-radius: 10px; border: 0; padding: 10px; text-decoration: none">Acessar Site</a>
+<a href="https://minasmetalica.com.br/" style="background: gold; color: white; border-radius: 10px; border: 0; padding: 10px; text-decoration: none">Acessar Site</a>
 
 
